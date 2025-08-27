@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>温泉一覧 - 温泉スクラップブック</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <nav class="navbar">
+        <div class="nav-container">
+            <a href="index.html" class="nav-brand">温泉スクラップブック</a>
+            <div class="nav-menu">
+                <a href="index.html" class="nav-link">一覧</a>
+            </div>
+        </div>
+    </nav>
+    
+    
+        <div class="hero">
+            <div class="container">
+                <h1>温泉スクラップブック</h1>
+                <p>家族で温泉情報を共有・記録</p>
+                <div class="stats">
+                    <span>登録温泉数: 1件</span>
+                </div>
+            </div>
+        </div>
+
+        <main class="container">
+            <div class="page-header">
+                <h2>温泉一覧</h2>
+                <div class="search-bar">
+                    <input type="text" id="searchInput" placeholder="温泉名で検索...">
+                    <div class="filter-buttons">
+                        <button onclick="filterByRating(5)" class="filter-btn">★5のみ</button>
+                        <button onclick="filterByRating(4)" class="filter-btn">★4以上</button>
+                        <button onclick="filterByFeature('tsubo_bath')" class="filter-btn">壺風呂あり</button>
+                        <button onclick="clearFilters()" class="filter-btn secondary">全て表示</button>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="onsen-grid" id="onsenGrid">
+                
+        <div class="onsen-card" 
+             data-name="スパジアムジャポン"
+             data-cleanliness="5"
+             data-relax="5"
+             data-manga="5"
+             data-bath="5"
+             data-tsubo="1"
+             data-milk="1"
+             data-electronic="完全対応">
+            
+            <div class="card-image">
+                <img src="uploads/thumb_20250827064124_b794300f.jpg" alt="スパジアムジャポン">
+                <div class="rating-badge">5.0</div>
+            </div>
+            
+            <div class="card-content">
+                <h3>スパジアムジャポン</h3>
+                <p class="address">東京都東久留米市上の原２丁目７−７</p>
+                <div class="ratings">
+                    <div class="rating-row">
+                        <span>綺麗さ:</span>
+                        <div class="stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+                    </div>
+                    <div class="rating-row">
+                        <span>リラックス:</span>
+                        <div class="stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+                    </div>
+                    <div class="rating-row">
+                        <span>漫画:</span>
+                        <div class="stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+                    </div><div class="rating-row">
+                        <span>お風呂:</span>
+                        <div class="stars"><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span><span class="star filled">★</span></div>
+                    </div>
+                </div>
+                <div class="features">
+                    <span class="feature">壺風呂</span>
+                    <span class="feature">イチゴ牛乳</span>
+                    <span class="feature">電子決済完全対応</span>
+                    <span class="feature">ロッカー:大</span>
+                </div>
+                <div class="visit-info">
+                    最終訪問: 2025年8月26日
+                </div>
+            </div>
+            
+            <div class="card-actions">
+                <a href="onsen_1.html" class="btn btn-primary">詳細を見る</a>
+            </div>
+        </div>
+            </div>
+        </main>
+    
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 温泉スクラップブック</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
