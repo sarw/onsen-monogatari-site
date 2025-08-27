@@ -190,10 +190,21 @@ main {
     overflow: hidden;
 }
 
+.card-image a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
 .card-image img {
     width: 100%;
     height: 100%;
     object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.card-image a:hover img {
+    transform: scale(1.05);
 }
 
 .rating-badge {
