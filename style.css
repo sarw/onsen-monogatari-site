@@ -266,6 +266,12 @@ main {
     color: #ffd700;
 }
 
+.no-rating, .no-rating-text {
+    color: #999;
+    font-style: italic;
+    font-size: 0.9rem;
+}
+
 .features {
     margin-bottom: 1rem;
     display: flex;
