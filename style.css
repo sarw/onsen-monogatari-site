@@ -288,6 +288,26 @@ main {
     font-weight: 500;
 }
 
+.feature.has-feature, .feature-tag.has-feature {
+    background: #e3f2fd;
+    color: #1976d2;
+}
+
+.feature.no-feature, .feature-tag.no-feature {
+    background: #f5f5f5;
+    color: #999;
+}
+
+.feature.has-fee, .feature-tag.has-fee {
+    background: #fff3e0;
+    color: #f57c00;
+}
+
+.feature.no-fee, .feature-tag.no-fee {
+    background: #e8f5e9;
+    color: #43a047;
+}
+
 .visit-info {
     color: #666;
     font-size: 0.85rem;
